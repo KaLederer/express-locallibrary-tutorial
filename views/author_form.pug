@@ -2,8 +2,8 @@ extends layout
 
 block content
   h1=title
-
-  p #{author.lifespan_formatted}
+  if author
+    p #{author.lifespan_formatted}
   
   form(method='POST' action='')
     div.form-group
